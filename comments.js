@@ -1,6 +1,10 @@
 //create web server
-const express = require('express');
-const app = express();
-const port = 3000;
-const path = require('path');
-const bodyParser = require('body-parser');
+var express = require('express');
+var app = express();
+var path = require('path');
+var bodyParser = require('body-parser');
+
+//create database
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/comment');
+
